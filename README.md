@@ -11,5 +11,5 @@
 
 - [Базовые правила](codestyle/editorconfig.md)
 - [CSS](codestyle/css.md)
-- [Javascript](codestyle/javascript.md)
+- [Javascript](codestyle/js.md)
 - [HTML](codestyle/html.md)
