@@ -1,3 +1,3 @@
-# Оформление html кода
+# Оформление HTML кода
 
 Work in progress
