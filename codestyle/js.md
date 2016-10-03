@@ -18,7 +18,7 @@ https://github.com/urfu-2016/demo-task-1
 
 <img width="500" alt="ci-eslint-log" src="https://cloud.githubusercontent.com/assets/4534405/19022790/760bb7e8-88f9-11e6-8f2d-e90c2e6ba2d1.png">
 
-Eslint подскажет в каких файлах и на какой строке произошла ошибка,  
+ESlint подскажет в каких файлах и на какой строке произошла ошибка,  
 а так же какое именно правило было нарушено. В данном примере «[no-unused-var](http://eslint.org/docs/rules/no-unused-vars)».  
 
 Весь список правил можно изучить по ссылке: http://eslint.org/docs/rules
@@ -126,18 +126,16 @@ numbers.sort()
   var language = 'ru';
   ```
 
-2. Для объявления констант используйте `const`
+2. Для объявления констант используйте заглавные буквы, разделённые `_`:
 
   __Плохо:__
   ```js
   var currentYear = new Date().getFullYear();
-  var MAX_OFFSET = 20;
   ```
 
   __Хорошо:__
   ```js
-  const currentYear = new Date().getFullYear();
-  const maxOffset = 20;
+  var CURRENT_YEAR = new Date().getFullYear();
   ```
 
 3. Используйте только английские слова, не используйте транслит
@@ -227,7 +225,6 @@ numbers.sort()
   }
 
   var hasAccess = hasAccess();
-
   if (hasAccess) {
       show(overallRating);
   }
