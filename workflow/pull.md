@@ -1,13 +1,12 @@
 # Как сделать pull request
 
+Перед тем как сделать свой первый пулл, мы рекомендуем пройти курс по основам Git на [GitHowTo](http://githowto.com/ru/setup) и посмотреть первую лекцию курса [«Javascript»](https://github.com/urfu-2016/javascript-slides).
+
 - [Регистрация на GitHub](how-to-pull-request.md#Регистрация-на-github)
 - [Как сделать pull request прямо на GitHub](how-to-pull-request.md#Как-сделать-pull-request-прямо-на-github)
-- [Как сделать pull request в windows, используя Git Shell](how-to-pull-request.md#Как-сделать-pull-request-в-windows-используя-git-shell)
+- [Как сделать pull request в windows](how-to-pull-request.md#Как-сделать-pull-request-в-windows)
 - [Как сделать pull request в linux](how-to-pull-request.md#Как-сделать-pull-request-в-linux)
-- [Полезные ссылки](how-to-pull-request.md#Полезные-ссылки)
-
-Крайне рекомендуем пройти курс по основам Git на [GitHowTo](http://githowto.com/ru/setup)  
-и посмотреть первую лекцию курса «Javascript»
+- [Как закешировать пароль](https://help.github.com/articles/caching-your-github-password-in-git/)
 
 ## Регистрация на GitHub
 
@@ -69,22 +68,12 @@
 
 Если нужны правки, просто повторяем шаги со 2 по 5.
 
-## Как сделать pull request в windows, используя Git Shell
+## Как сделать pull request в windows
 
-Здесь два варианта:
+Устанавливаем Git https://git-scm.com/download/
 
-- __Рекомендованный__
-
-  Устанавливаем Git https://git-scm.com/download/
-
-  После установки, запускаем Git Bash  
-  (ярлык для запуска можно найти в меню Пуск).
-
-- Устанавливаем вместе с приложением Git Shell.  
-  Для этого выполняем шаги со 2 по 4 раздела [Как сделать pull request в windows](how-to-pull-request.md#Как-сделать-pull-request-в-windows)
-
-  После установки приложения, запускаем Git Shell  
-  (ярлык для запуска можно найти на рабочем столе).
+После установки, запускаем Git Bash  
+(ярлык для запуска можно найти в меню Пуск).
 
 Далее смотрим shell команды в разделе [как сделать pull request в linux](how-to-pull-request.md#Как-сделать-pull-request-в-linux).
 
@@ -95,6 +84,10 @@
 **Шаг 1.** Выполняем следующие команды в терминале:  
 
 ```bash
+# Добавляем свою почту и имя (укажите из вашего профиля на github)
+git config --global user.email "sergey@zhigalov.com"
+git config --global user.name "Zhigalov Sergey"
+
 # Клонируем репозиторий (вместо gogoleff – ваш логин)
 git clone https://github.com/gogoleff/demo-task-1.git
 
@@ -105,6 +98,8 @@ cd demo-task-1
 
 # Добавляем все изменённые файлы через пробел
 git add math.js
+
+# git add необходимо выполнять после каждого изменения файла
 
 # Коммитим (утверждаем изменения)
 git commit -m "Моё решение задачи"
