@@ -8,6 +8,9 @@
 - [Как сделать pull request в linux](how-to-pull-request.md#Как-сделать-pull-request-в-linux)
 - [Как закешировать пароль](https://help.github.com/articles/caching-your-github-password-in-git/)
 
+> Для упрощения, workflow не включает в себя создание git-веток  
+> Работаем только с __одной master-веткой__
+
 ## Регистрация на GitHub
 
 Если у вас нет аккаунта на Github – регистрируемся по ссылке http://github.com/join  
