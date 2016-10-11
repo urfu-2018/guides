@@ -9,6 +9,7 @@
 - [Прохождение тестов](workflow/test.md)
 - [Просмотр результатов на Хрюборге](https://hruborg.herokuapp.com/)
 - [Все этапы](workflow/overall.md)
+- [Про экзамен](workflow/exam.md)
 
 ## Оформление кода
 
