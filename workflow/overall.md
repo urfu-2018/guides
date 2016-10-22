@@ -42,7 +42,7 @@
 <img width="775" alt="apple" src="https://cloud.githubusercontent.com/assets/4534405/19565771/7f4a426e-9701-11e6-9fe9-98c01f82dfb7.png">
 
 Если замечаний не осталось,  
-студент-ментор отправляет ракету :rocket: (комментарий с текстом `:rocket:`)  
+студент-ментор отправляет ракету :rocket: (__одиночный (single)__ комментарий с текстом `:rocket:`)  
 <img width="775" alt="rocket" src="https://cloud.githubusercontent.com/assets/4534405/19565785/89f84b34-9701-11e6-9d3e-2fe240e44318.png">
 
 Хрюндель, увидев такой комментарий, переводит пулл на следующий этап.
