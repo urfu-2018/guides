@@ -1,6 +1,6 @@
 # Как сделать pull request
 
-Перед тем как сделать свой первый пулл, мы рекомендуем пройти курс по основам Git на [GitHowTo](http://githowto.com/ru/setup) и посмотреть первую лекцию курса [«Javascript»](https://github.com/urfu-2016/javascript-slides).
+Перед тем как сделать свой первый пулл, мы рекомендуем пройти курс по основам Git на [GitHowTo](http://githowto.com/ru/setup) и посмотреть первую лекцию курса [«Javascript»](https://github.com/urfu-2017/javascript-slides).
 
 - [Регистрация на GitHub](how-to-pull-request.md#Регистрация-на-github)
 - [Как сделать pull request прямо на GitHub](how-to-pull-request.md#Как-сделать-pull-request-прямо-на-github)

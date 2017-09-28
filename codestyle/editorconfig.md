@@ -24,6 +24,10 @@
   Смотрим инструкцию по ссылке и устанавливаем:  
   https://atom.io/packages/editorconfig
 
+- __VSCode__  
+  Смотрим инструкцию по ссылке и устанавливаем:  
+  https://marketplace.visualstudio.com/items?itemName=EditorConfig.EditorConfig
+
 ## Какие правила он содержит
 
 ```ini

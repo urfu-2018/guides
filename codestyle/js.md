@@ -4,7 +4,7 @@
 на остальные обратят внимание менторы во время ручной проверки.
 
 Ознакомиться с механизмом вы можете на демонстрационной задаче:  
-https://github.com/urfu-2016/demo-task-1
+https://github.com/urfu-2017/demo-task-1
 
 ## Правила для автоматической проверки
 
@@ -28,7 +28,7 @@ ESlint подскажет в каких файлах и на какой стро
 <img width="771" alt="ci-success" src="https://cloud.githubusercontent.com/assets/4534405/19022864/d7fc0088-88fa-11e6-8142-38eded04077f.png">
 
 Вы можете не ждать автоматической проверки и всегда проверить код вручную,  
-выполнив локально команду `npm i && npm run lint`
+выполнив локально команду `npm install && npm run lint`
 
 ## Не пишите код впрок
 
@@ -225,6 +225,7 @@ numbers.sort()
   }
 
   var hasAccess = hasAccess();
+  
   if (hasAccess) {
       show(overallRating);
   }
