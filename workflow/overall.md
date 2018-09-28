@@ -2,8 +2,8 @@
 
 Ознакомиться с механизмом вы можете на демонстрационных задачах:  
 
-- [demo-task-1](https://github.com/urfu-2017/demo-task-1) для курса «Javascript»
-- [demo-task-2](https://github.com/urfu-2017/demo-task-2) для курса «Вёрстка»
+- [demo-task-1](https://github.com/urfu-2018/demo-task-1) для курса «Javascript»
+- [demo-task-2](https://github.com/urfu-2018/demo-task-2) для курса «Вёрстка»
 
 ### Этап 0. Выполнение домашнего задания
 

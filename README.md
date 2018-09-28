@@ -24,7 +24,7 @@
 
 Мы подготовили две очень простые задачи, чтобы вы потренировались пройти все этапы выполнения и приёма задачи, включая проверку на оформление кода и прохождение тестов.
 
-- [demo-task-1](https://github.com/urfu-2017/demo-task-1) для курса «Javascript»
-- [demo-task-2](https://github.com/urfu-2017/demo-task-2) для курса «Вёрстка»
+- [demo-task-1](https://github.com/urfu-2018/demo-task-1) для курса «Javascript»
+- [demo-task-2](https://github.com/urfu-2018/demo-task-2) для курса «Вёрстка»
 
 Результаты этих задач можно будет посмотреть на [Хрюборге](https://hruborg.herokuapp.com/), любые вопросы можно будет задавать в чат или прямо в пулл.
