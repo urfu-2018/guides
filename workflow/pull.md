@@ -1,11 +1,11 @@
 # Как сделать pull request
 
-Перед тем как сделать свой первый пулл, мы рекомендуем пройти курс по основам Git на [GitHowTo](http://githowto.com/ru/setup) и посмотреть первую лекцию курса [«Javascript»](https://github.com/urfu-2018/javascript-slides).
+Перед тем как сделать свой первый пулл, мы рекомендуем пройти курс по основам Git на [GitHowTo](http://githowto.com/ru/setup) и посмотреть первую лекцию курса [«Javascript»](https://github.com/urfu-2018/slides).
 
-- [Регистрация на GitHub](how-to-pull-request.md#Регистрация-на-github)
-- [Как сделать pull request прямо на GitHub](how-to-pull-request.md#Как-сделать-pull-request-прямо-на-github)
-- [Как сделать pull request в windows](how-to-pull-request.md#Как-сделать-pull-request-в-windows)
-- [Как сделать pull request в linux](how-to-pull-request.md#Как-сделать-pull-request-в-linux)
+- [Регистрация на GitHub](pull.md#Регистрация-на-github)
+- [Как сделать pull request прямо на GitHub](pull.md#Как-сделать-pull-request-прямо-на-github)
+- [Как сделать pull request в windows](pull.md#Как-сделать-pull-request-в-windows)
+- [Как сделать pull request в linux](pull.md#Как-сделать-pull-request-в-linux)
 - [Как закешировать пароль](https://help.github.com/articles/caching-your-github-password-in-git/)
 
 > Для упрощения, workflow не включает в себя создание git-веток  
@@ -81,7 +81,7 @@
 После установки, запускаем Git Bash  
 (ярлык для запуска можно найти в меню Пуск).
 
-Далее смотрим shell команды в разделе [как сделать pull request в linux](how-to-pull-request.md#Как-сделать-pull-request-в-linux).
+Далее смотрим shell команды в разделе [как сделать pull request в linux](pull.md#Как-сделать-pull-request-в-linux).
 
 ## Как сделать pull request в linux
 
