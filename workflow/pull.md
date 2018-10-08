@@ -24,7 +24,7 @@
 
 ## Как сделать pull request прямо на GitHub
 
-**Шаг 1.** Заходим в основной репозиторий задачи https://github.com/urfu-2016/demo-task-1  
+**Шаг 1.** Заходим в основной репозиторий задачи https://github.com/urfu-2018/demo-task-1
 И делаем форк задачи к себе. Для этого жмём «fork» в правом верхнем углу.  
 
 <img width="334" alt="fork" src="https://cloud.githubusercontent.com/assets/4534405/19143250/0e61e156-8bbc-11e6-9b1b-54ec5e6c9a80.png">
