@@ -1,10 +1,16 @@
-# Оформление javascript кода
+# Оформление JavaScript кода
 
 Часть правил оформления будет проверена автоматически,  
 на остальные обратят внимание менторы во время ручной проверки.
 
 Ознакомиться с механизмом вы можете на демонстрационной задаче:  
 https://github.com/urfu-2018/demo-task-1
+
+- [Правила для автоматической проверки](#Правила-для-автоматической-проверки)
+- [Не пишите код впрок](#Не-пишите-код-впрок)
+- [Не повторяйтесь](#Не-повторяйтесь)
+- [Пишите проще](#Пишите-проще)
+- [Называйте переменные понятно](#Называйте-переменные-понятно)
 
 ## Правила для автоматической проверки
 
@@ -19,11 +25,11 @@ https://github.com/urfu-2018/demo-task-1
 <img width="500" alt="ci-eslint-log" src="https://cloud.githubusercontent.com/assets/4534405/19022790/760bb7e8-88f9-11e6-8f2d-e90c2e6ba2d1.png">
 
 ESlint подскажет в каких файлах и на какой строке произошла ошибка,  
-а так же какое именно правило было нарушено. В данном примере «[no-unused-var](http://eslint.org/docs/rules/no-unused-vars)».  
+а так же какое именно правило было нарушено. В данном примере – «[no-unused-let](http://eslint.org/docs/rules/no-unused-lets)».  
 
 Весь список правил можно изучить по ссылке: http://eslint.org/docs/rules
 
-Если код удволетворяет всем правилам, вы увидите:
+Если код удовлетворяет всем правилам, вы увидите:
 
 <img width="771" alt="ci-success" src="https://cloud.githubusercontent.com/assets/4534405/19022864/d7fc0088-88fa-11e6-8142-38eded04077f.png">
 
@@ -61,23 +67,19 @@ sum([1, 2, 3]);
 
 __Плохо:__
 ```js
-var averageRating = ratings
-    .reduce(function (sum, rating) {
-        return sum + rating;
-    }, 0) / ratings.length;
+let averageRating = ratings
+    .reduce((sum, rating) => sum + rating, 0) / ratings.length;
 
-var averageGrade = grades
-    .reduce(function (sum, grade) {
-        return sum + grade;
-    }, 0) / grades.length;
+let averageGrade = grades
+    .reduce((sum, grade) => sum + grade, 0) / grades.length;
 ```
 
 __Хорошо:__
 ```js
 function getAverageOf(numbers) {}
 
-var averageRating = getAverageOf(ratings);
-var averageGrade = getAverageOf(grades);
+let averageRating = getAverageOf(ratings);
+let averageGrade = getAverageOf(grades);
 ```
 
 ## Пишите проще
@@ -87,14 +89,14 @@ var averageGrade = getAverageOf(grades);
 
 __Плохо:__
 ```js
-var numbers = [1, 4, 5, 2, 3];
+let numbers = [1, 4, 5, 2, 3];
 
 // Сортируем числа
 // TODO: оптимизировать – может быть быструю сортировку?
-for (var i = 0; i < numbers.length; i++) {
-    for (var j = 0; j < numbers.length; j++) {
+for (let i = 0; i < numbers.length; i++) {
+    for (let j = 0; j < numbers.length; j++) {
         if (numbers[j] > numbers[j+1]) {
-            var greatest = numbers[j];
+            const greatest = numbers[j];
 
             numbers[j] = numbers[j+1];
             numbers[j+1] = greatest;
@@ -105,7 +107,7 @@ for (var i = 0; i < numbers.length; i++) {
 
 __Хорошо:__
 ```js
-var numbers = [1, 4, 5, 2, 3];
+let numbers = [1, 4, 5, 2, 3];
 
 numbers.sort()
 ```
@@ -116,97 +118,85 @@ numbers.sort()
 
   __Плохо:__
   ```js
-  var apples_count = 5;
-  var Language = 'ru';
+  let apples_count = 5;
+  let Language = 'ru';
   ```
 
   __Хорошо:__
   ```js
-  var applesCount = 5;
-  var language = 'ru';
+  let applesCount = 5;
+  let language = 'ru';
   ```
 
-2. Для объявления констант используйте заглавные буквы, разделённые `_`:
+2. Используйте только английские слова, не используйте транслит
 
   __Плохо:__
   ```js
-  var currentYear = new Date().getFullYear();
+  let ssilka = 'http://esling.org/';
+  let ссылка = 'http://esling.org/';
   ```
 
   __Хорошо:__
   ```js
-  var CURRENT_YEAR = new Date().getFullYear();
+  let link = 'http://esling.org/';
   ```
 
-3. Используйте только английские слова, не используйте транслит
+3. Вкладывайте смысл в название – оно должно быть однозначным и понятным
 
   __Плохо:__
   ```js
-  var ssilka = 'http://esling.org/';
-  var ссылка = 'http://esling.org/';
+  let a, b; // Не несут смысла
+  let list; // Слишком абстрактно – список чего?
   ```
 
   __Хорошо:__
   ```js
-  var link = 'http://esling.org/';
+  let overallPrice, publishDate;
+  let grocceryList;
   ```
 
-4. Вкладывайте смысл в название – оно должно быть однозначным и понятным
-
-  __Плохо:__
-  ```js
-  var a, b; // Не несут смысла
-  var list; // Слишком абстрактно – список чего?
-  ```
-
-  __Хорошо:__
-  ```js
-  var overallPrice, publishDate;
-  var grocceryList;
-  ```
-
-  Допустимо использовать `i`, `j` в качестве итераторв цикла `for (var i = 0; i < 2; i++) {}`,  
+  Допустимо использовать `i`, `j` в качестве итераторов цикла `for (let i = 0; i < 2; i++) {}`,  
   и `a`, `b` – в функциях сортировки `grocceryList.sort(function (a, b) {})`
 
-5. Логические перменные начинайте с модальных глаголов
+4. Логические перменные начинайте с модальных глаголов
 
   __Плохо:__
   ```js
-  var accessToPublish
-  var visible;
+  let accessToPublish
+  let visible;
   ```
 
   __Хорошо:__
   ```js
-  var canPublish
-  var isVisible;
+  let canPublish
+  let isVisible;
   ```
 
-6. Не используйте сокращения и не пишите избыточные имена
+5. Не используйте сокращения и не пишите избыточные имена
 
   __Плохо:__
   ```js
-  var btn;
-  var dateOfFirstPublication;
-  var postsCollection;
+  let btn;
+  let dateOfFirstPublication;
+  let postsCollection;
   ```
 
   __Хорошо:__
   ```js
-  var button;
-  var publishDate;
-  var posts;
+  let button;
+  let publishDate;
+  let posts;
   ```
 
-7. Объявляйте переменные максимально близко к месту использования
+6. Объявляйте переменные максимально близко к месту использования
 
   __Плохо:__
   ```js
-  var hasAccess = hasAccess(); // Далеко от места использования
-  var comments = getComments();
-  var overalRaiting = 0;
+  let hasAccess = hasAccess(); // Далеко от места использования
+  let comments = getComments();
+  let overalRaiting = 0;
 
-  for (var i = 0; i < comments.length; i++) {
+  for (let i = 0; i < comments.length; i++) {
       overallRating += comments[i].rating;
   }
 
@@ -217,21 +207,21 @@ numbers.sort()
 
   __Хорошо:__
   ```js
-  var comments = getComments();
-  var overalRaiting = 0;
+  let comments = getComments();
+  let overalRaiting = 0;
 
-  for (var i = 0; i < comments.length; i++) {
+  for (let i = 0; i < comments.length; i++) {
       overallRating += comments[i].rating;
   }
 
-  var hasAccess = hasAccess();
+  let hasAccess = hasAccess();
   
   if (hasAccess) {
       show(overallRating);
   }
   ```
 
-8. Для именования функций используйте глаголы
+7. Для именования функций используйте глаголы
 
   __Плохо:__
   ```js

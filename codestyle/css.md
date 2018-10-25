@@ -19,7 +19,7 @@ https://github.com/urfu-2018/demo-task-2
 <img width="420" alt="fail-stylelint" src="https://cloud.githubusercontent.com/assets/4534405/19082675/96d16a2e-8a78-11e6-8296-9056c689e047.png">
 
 Stylelint подскажет в каких файлах и на какой строке произошла ошибка,  
-а так же какое именно правило было нарушено. В данном примере «[block-no-empty](http://stylelint.io/user-guide/rules/block-no-empty/)».  
+а так же какое именно правило было нарушено. В данном примере – «[block-no-empty](http://stylelint.io/user-guide/rules/block-no-empty/)».  
 
 Весь список правил можно изучить по ссылке: http://stylelint.io/user-guide/rules/
 
